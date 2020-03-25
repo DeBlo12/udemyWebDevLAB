@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My contact Details</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+
 </head>
 <body>
 
@@ -17,11 +19,17 @@
     <hr>
 
     <form action="index.html" method="post" enctype="text/plain">
-        <label for="name">Enter your name:</label>
-        <input type="text" name="name" id="name" required><br>
-
-        <label for="email">Your email:</label>
-        <input type="email" name="email" id="email"><br>
+        <table>
+            <tr>
+            <td><label for="name">Enter your name:</label></td>
+            <td><input type="text" name="name" id="name" required></td><br>
+            </tr>
+            <tr>
+            <td><label for="email">Your email:</label></td>
+            <td><input type="email" name="email" id="email"></td><br>
+            </tr>
+            
+        </table>
 
         <label for="message">Your message:</label><br>
         <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
@@ -29,7 +37,6 @@
         <input type="submit" value="Submit"><br>
 
         <input type="date" name="date" id="date">
-        
     </form>
     
 </body>
